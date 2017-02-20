@@ -23,5 +23,11 @@ a.brand-logo.center
 
 #logo
 {
-    width:115%;
+    margin-top: 0.9em;
+    margin-left: 15em;
+}
+
+main
+{
+    margin-top: 8em;
 }
