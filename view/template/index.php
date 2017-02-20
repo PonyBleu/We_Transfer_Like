@@ -34,7 +34,25 @@ session_start();
 
     <header>
 
-        
+        <div class="navbar-fixed">
+
+            <nav class="cyan lighten-4">
+
+                <div class="nav-wrapper">
+
+                    <a class="brand-logo center grey-text text-darken-2">WeTransfer Like</a>
+                    
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        
+                        <img id="logo" src="view/img/Logo.png"/>
+                        
+                    </ul>
+                    
+                </div>
+
+            </nav>
+
+        </div>
 
     </header>
 
@@ -49,8 +67,9 @@ session_start();
     </main>
 
     <footer>
-
-
+    
+        <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
     </footer>
 
 

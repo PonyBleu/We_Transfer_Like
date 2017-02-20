@@ -1,0 +1,27 @@
+*
+{
+    font-family: "Roboto Mono", monospace;
+}
+.navbar-fixed
+{
+    height: 80px;
+}
+
+nav
+{
+    height: 80px;
+}
+
+a.brand-logo.center
+{
+    margin-top: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-shadow: 1px 7px 1px #4dd0e1;
+}
+
+#logo
+{
+    width:115%;
+}
