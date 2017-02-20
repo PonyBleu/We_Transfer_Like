@@ -30,11 +30,11 @@ session_start();
 
         <div class="navbar-fixed">
 
-            <nav>
+            <nav class="cyan lighten-4">
 
-                <div class="nav-wrapper cyan lighten-4">
+                <div class="nav-wrapper">
 
-                    <h1 class="brand-logo center">WeTransfer Like</h1>/>
+                    <a class="brand-logo center grey-text text-darken-2">WeTransfer Like</a>
                     
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                         
