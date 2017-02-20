@@ -32,13 +32,17 @@ session_start();
 
             <nav>
 
-                <ul class="nav-wrapper cyan lighten-4">
+                <div class="nav-wrapper cyan lighten-4">
 
-
-                  <img id="logo" class="brand-logo" src="view/img/email.png"/>
-
-
-                </ul>
+                    <h1 class="brand-logo center">WeTransfer Like</h1>/>
+                    
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        
+                        <img id="logo" src="view/img/Logo.png"/>
+                        
+                    </ul>
+                    
+                </div>
 
             </nav>
 
