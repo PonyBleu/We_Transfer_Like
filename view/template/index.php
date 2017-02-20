@@ -1,3 +1,8 @@
+<?php 
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+?>
+
 <!DOCTYPE>
 
 
@@ -13,6 +18,11 @@
         
     <meta charset="utf-8"/>
     <meta name="description" content="Website for transfer files to email"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+
         
 </head>
 
@@ -47,6 +57,11 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="view/js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="view/js/verif_form.js"></script>
+
+
+
     
 
 </body>
