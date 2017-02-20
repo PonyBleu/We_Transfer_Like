@@ -51,3 +51,19 @@
 						<span id="msg_all"></span>
 
 			</body>
+			
+		
+	
+<!--<form action="controller/upload.php" method="post" enctype="multipart/form-data">
+    <div class="">
+        <div style="visibility:hidden; opacity:0" id="dropzone">
+            <div id="textnode">Drop ici</div>
+        </div>
+        <input type="hidden" name="MAX_FILE_SIZE" value="5000" />
+        <input type="file" name="monFichier" id="monFichier" class="inputfile" />
+        <label for="file"><strong>Choose a file</strong></label>
+        <p>ou drag and drop baby!</p>
+        <div id=text></div>
+    </div>
+    <button type="submit" name="submit" value="Upload Image">Envoyer !! </button>
+</form> -->
