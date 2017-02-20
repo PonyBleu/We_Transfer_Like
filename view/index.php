@@ -5,7 +5,7 @@
 
 									<form method="post" name="formulaire" id="formulaire" >
 
-											<h1 id="redac">Envoyer un fichier</h1>
+											<h2 id="redac">Envoyer un fichier</h2>
 
 											<hr>
 
@@ -49,9 +49,9 @@
 						<span id="msg_all"></span>
 
 			</body>
-			
-		
-	
+
+
+
 <!--<form action="controller/upload.php" method="post" enctype="multipart/form-data">
     <div class="">
         <div style="visibility:hidden; opacity:0" id="dropzone">
