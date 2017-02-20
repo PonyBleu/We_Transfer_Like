@@ -30,17 +30,17 @@ session_start();
 
         <div class="navbar-fixed">
 
-              <nav>
+            <nav>
 
-                  <ul class="nav-wrapper cyan lighten-4">
-
-
-                    <img id="logo" class="brand-logo" src="view/img/email.png"/>
+                <ul class="nav-wrapper cyan lighten-4">
 
 
-                  </ul>
+                  <img id="logo" class="brand-logo" src="view/img/email.png"/>
 
-              </nav>
+
+                </ul>
+
+            </nav>
 
         </div>
 
