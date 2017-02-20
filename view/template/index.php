@@ -7,8 +7,8 @@
     
 <head>
         
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css" media="scrren,projection"/>
-    <link rel="stylesheet" src="view/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css" media="screen,projection"/>
+    <link rel="stylesheet" href="view/css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"> <!-- font-family: "Roboto Mono", monospace -->
         
     <meta charset="utf-8"/>
@@ -24,7 +24,7 @@
 
     <header>
 
-
+        
 
     </header>
 
