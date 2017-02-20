@@ -1,3 +1,7 @@
+<?php 
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+?>
 <!DOCTYPE>
 
 
@@ -24,7 +28,21 @@
 
     <header>
 
-        
+        <div class="navbar-fixed">
+
+            <nav>
+
+                <ul class="nav-wrapper cyan lighten-4">
+
+
+                  <img id="logo" class="brand-logo" src="view/img/email.png"/>
+
+
+                </ul>
+
+            </nav>
+
+        </div>
 
     </header>
 
@@ -39,8 +57,9 @@
     </main>
 
     <footer>
-
-
+    
+        <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
     </footer>
 
 
