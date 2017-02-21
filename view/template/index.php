@@ -78,9 +78,6 @@ session_start();
                 <div class="divider"></div>
             </li>
             <li><i class="material-icons"><img src="view/img/gmail.png"></i><a href="#!">Outlook</a></li>
-            
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
         </ul>
 
 
