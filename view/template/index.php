@@ -73,14 +73,12 @@ session_start();
         <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         
         <ul id="slide-out" class="side-nav">
-            <li>
-            
-            </li>
             <li><i class="material-icons"><img src="view/img/Outlook.png"></i><a href="#!">Outlook</a></li>
-            <li><a href="#!">Second Link</a></li>
             <li>
                 <div class="divider"></div>
             </li>
+            <li><i class="material-icons"><img src="view/img/gmail.png"></i><a href="#!">Outlook</a></li>
+            
             <li><a class="subheader">Subheader</a></li>
             <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
         </ul>
