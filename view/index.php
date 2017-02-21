@@ -44,7 +44,7 @@
                 
                 <div class="col s12 m4 l4" class="form-group">
                    
-                    <div class="file-field input-field">
+                    <div class="file-field input-field" style="margin-top: 0">
                               
                         <div class="btn">
                                
@@ -73,10 +73,9 @@
                         
                         <div class="input-field col s12">
                             
-                            <textarea id="article" name="article" class="materialize-textarea">
-                                
-                                
-                            </textarea>
+                            <textarea style="border-bottom: 0" id="article" name="article" class="materialize-textarea"></textarea>
+                            
+                            <label for="article">Message(facultatif)</label>
                             
                         </div>
                         
@@ -87,22 +86,27 @@
                 <div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
                 
                 <div class="col s12 m4 l4">
+                   
                     <button class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                         <i class="material-icons right">send</i>
 
                     </button>
+                    
                 </div>
                 
             
 
             </form>
+            
             <span id="message"></span>
             <span id="msg_all"></span>
         </div>
-	</div>
+        
+	   </div>
 	
-</div>
+    </div>
+    
 </body>
 
 
