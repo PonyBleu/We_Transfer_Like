@@ -57,6 +57,8 @@ session_start();
     </header>
 
     <main>
+        
+         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
         <?php
 
@@ -69,15 +71,33 @@ session_start();
     <footer>
 
         <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
+        <ul id="slide-out" class="side-nav">
+            <li>
+            
+            </li>
+            <li><i class="material-icons"><img src="view/img/Outlook.png"></i><a href="#!">Outlook</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+
+
 
     </footer>
 
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="view/js/js.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script type="text/javascript" src="view/js/verif_form.js"></script>
+    <script>$(".button-collapse").sideNav();</script>
+    <script type="text/javascript" src="view/js/animation.js"></script>
+    <script type="text/javascript" src="view/js/js.js"></script>
 
 
 

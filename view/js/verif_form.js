@@ -8,10 +8,10 @@
 						            var monfichier	 = $("#fichier").val();
 						            var meschamps = monnom + monmail + sonmail + monfichier;
 
-						            var nomalerte  = "<span style='color:lightblue'>Veuillez entrer votre nom</span>";
-									var mailalerte  = "<span style='color:lightblue'>Veuillez entrer votre email</span>";
-									var maildestalerte  = "<span style='color:lightblue'>Veuillez entrer l'email du destinataire</span>";
-									var fichieralerte  = "<span style='color:lightblue'>Veuillez selectionner votre fichier</span>";
+						            var nomalerte  = "<div id='nomalerte' style='display:block'><img style='display:block' id='imgnomalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer votre Nom !</div>";
+									var mailalerte  = "<div id='mailalerte' style='display:block'><img style='display:block' id='imgmailalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer votre email !</div>";
+									var maildestalerte  = "<div id='maildestalerte' style='display:block'><img style='display:block' id='imgmaildestalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer l'email du destinataire !</div>";
+									var fichieralerte  = "<div id='fichieralerte' style='display:block'><img style='display:block' id='imgfichieralerte' src='view/img/fleche2.png' alt='fleche'>Veuillez selectionner votre fichier !</div>";
 									var erreurenvoi = false;
 
 									$("#nomerr").html("");
