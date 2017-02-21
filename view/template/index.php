@@ -15,7 +15,7 @@ session_start();
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css" media="screen,projection"/>
     <link rel="stylesheet" href="view/css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"> <!-- font-family: "Roboto Mono", monospace -->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta charset="utf-8"/>
     <meta name="description" content="Website for transfer files to email"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,9 +28,12 @@ session_start();
 
 
 
-<body>
+<body >
 
-
+    <div id="dropzone">
+        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+        <p>      Vous pouvez déposer vos fichiers ici </p>
+    </div>
 
     <header>
 
@@ -56,7 +59,7 @@ session_start();
 
     </header>
 
-    <main>
+    <main ondrop="drop(event)" ondragover="allowDrop(event)">
 
          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
