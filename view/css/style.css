@@ -97,3 +97,32 @@ main
 {
     margin-top: 8em;
 }
+
+.editext
+{
+  width: 250px;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.form-group
+{
+  width: 250px;
+  text-align: center;
+  margin-left: 25%;
+}
+
+#redac
+{
+  font-size: 30px;
+}
+
+#article
+{
+  height: 15%;
+}
+
+#button
+{
+  margin-left: 25%;
+}

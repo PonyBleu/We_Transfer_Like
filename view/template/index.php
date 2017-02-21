@@ -1,4 +1,4 @@
-<?php 
+<?php
 error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 ?>
@@ -7,15 +7,15 @@ session_start();
 
 
 <html>
-   
-   
-    
+
+
+
 <head>
-        
+
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.css" media="screen,projection"/>
     <link rel="stylesheet" href="view/css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"> <!-- font-family: "Roboto Mono", monospace -->
-        
+
     <meta charset="utf-8"/>
     <meta name="description" content="Website for transfer files to email"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,7 +23,7 @@ session_start();
 
 
 
-        
+
 </head>
 
 
@@ -41,13 +41,13 @@ session_start();
                 <div class="nav-wrapper">
 
                     <a class="brand-logo center grey-text text-darken-2">WeTransfer Like</a>
-                    
+
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
-                        
+
                         <img id="logo" src="view/img/Logo.png"/>
-                        
+
                     </ul>
-                    
+
                 </div>
 
             </nav>
@@ -89,6 +89,9 @@ session_start();
   </ul>
 
         
+
+        <!-- <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
     </footer>
 
 
@@ -103,7 +106,7 @@ session_start();
 
 
 
-    
+
 
 </body>
 
