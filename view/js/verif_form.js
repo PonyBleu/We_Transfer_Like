@@ -5,7 +5,7 @@
 						            var monnom        = $("#nom").val();
 						            var monmail      = $("#mail").val();
 						            var sonmail      = $("#maildest").val();
-						            var monfichier	 = $("#fichier").val();
+						            var monfichier	 = $("#monFichier").val();
 						            var meschamps = monnom + monmail + sonmail + monfichier;
 
 						            var nomalerte  = "<div id='nomalerte' style='display:block'><img style='display:block' id='imgnomalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer votre Nom !</div>";
