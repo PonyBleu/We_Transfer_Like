@@ -43,7 +43,6 @@
 									if (erreurenvoi == false) {
                                         var urlDonnee = $(this).attr("action");
                                         var donnee = $(this).serialize() ;
-                                        console.log($urlDonnee);
 						                $.ajax({
 						                    type : "POST",
 						                    url: $urlDonnee ,
