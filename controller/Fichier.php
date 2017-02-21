@@ -3,16 +3,23 @@
 class Fichier
 {
 
-  public function setform(){
-    global $dbh;
-    $count = $this->countFichier()+1;
-    $req = $dbh->prepare("INSERT INTO fichier (url_fichier), (email_envoyeur), (email_receveur) VALUES (:url_fichier), (:email_envoyeur), (:email_receveur)");
-    $req->execute(array(
-      $url_fichier => "http://melanies.marmier.codeur.online/Fevrier/We_Transfer_Like/view/fichier".$nom;
-      $email_envoyeur => $_POST("#");
-      $email_receveur => $_POST("#");
-      $nom => $_POST("#");
-    ));
-  }
+    public function setform(){
+     global $dbh;
+     $get_id_fichier = $_GET['id_fichier'];
+     $req = $dbh->prepare("SELECT url_fichier , id_fichier FROM fichier WHERE id_fichier = :id_fichier");
+     $req->execute(array(
+        "id_fichier"=>$get_id_fichier
+     ));
+     $result = $req->fetchAll(PDO::FETCH_ASSOC);
+      // print_r($result);
+      if ($get_id_fichier == "")
+      {
+        echo "Une erreur est survenu !";
+      }else
+        {
+          echo "GG";
+        }
 
-}
+   }
+
+  }
