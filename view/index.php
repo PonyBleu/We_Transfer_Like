@@ -27,9 +27,9 @@
                 <input type="file" name="monFichier" id="monFichier" />
                 <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
 	       	</div>
-			<div id="fichieralerte"><img src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
+			<div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
 				<input id="button" name="submit" type="submit" value="Envoyer"/>
-			</div>
+
 		</form>
 	<span id="message"></span>
 	<span id="msg_all"></span>
