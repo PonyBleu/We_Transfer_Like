@@ -49,7 +49,6 @@ div#textnode {
     background-color: black;
     display: inline-block;
 }
-
 .inputfile:focus + label,
 .inputfile + label:hover {
     background-color: red;
@@ -115,12 +114,12 @@ main
     margin-top: -9px;
 }
 
-.editext
+/*.editext
 {
   width: 250px;
   text-align: center;
   margin-left: 25%;
-}
+} */
 
 .form-group
 {
@@ -155,13 +154,14 @@ main
 
 #nomalerte
 {
-  background-color: #000;
-  color: #fff;
+/*  background-color: #757575;*/
+/*  color: #fff;*/
+  color: red;
 
   width: 10%;
-  height: 66px;
+  height: 58px;
 
-  margin-left: 15%;
+  margin-left: 12%;
   margin-top: -4%;
 
   position: absolute;
@@ -179,13 +179,14 @@ main
 
 #mailalerte
 {
-  background-color: #000;
-  color: #fff;
+/*  background-color: #757575 ;*/
+/*  color: #fff;*/
+  color: red;
 
   width: 10%;
-  height: 66px;
+  height: 58px;
 
-  margin-left: 15%;
+  margin-left: 12%;
   margin-top: -4%;
 
   position: absolute;
@@ -194,8 +195,8 @@ main
 
 #imgmaildestalerte
 {
-  margin-left: -10%;
   margin-top: 7%;
+  margin-left: -10%;
 
   position: absolute;
   display: none;
@@ -203,13 +204,14 @@ main
 
 #maildestalerte
 {
-  background-color: #000;
-  color: #fff;
+/*  background-color: #757575 ;*/
+/*  color: #fff;*/
+    color: red:
 
   width: 10%;
-  height: 238px;
+  height: 56px;
 
-  margin-left: 15%;
+  margin-left: 12%;
   margin-top: -4%;
 
   position: absolute;
@@ -229,15 +231,20 @@ main
 
 #fichieralerte
 {
-  background-color: #000;
+/*
+  background-color: #757575 ;
   color: #fff;
+*/
+  color: red;
 
   width: 10%;
   height: 66px;
 
-  margin-left: 15%;
+  margin-left: 58%;
   margin-top: -2%;
 
   position: absolute;
   display: none;
 }
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
