@@ -70,17 +70,17 @@ div#textnode {
 }
 .navbar-fixed
 {
-    height: 80px;
+    height: 100px;
 }
 
 nav
 {
-    height: 80px;
+    height: 100px;
 }
 
 a.brand-logo.center
 {
-    margin-top: 0.3em;
+    margin-top: 0.5em;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 100;
@@ -89,7 +89,7 @@ a.brand-logo.center
 
 #logo
 {
-    margin-top: 0.9em;
+    margin-top: 1.9em;
     margin-left: 3em;
 }
 
