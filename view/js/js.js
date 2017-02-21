@@ -1,5 +1,4 @@
 var lastTarget = null;
-
 function isFile(evt) {
     var dt = evt.dataTransfer;
 
