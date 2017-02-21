@@ -1,7 +1,11 @@
 <body>
+   
     <div class="container">
+      
        <div class="row">
+       
         <div class="editext">
+           
             <form method="post"name="formulaire" id="formulaire" action="controller/upload.php" enctype="multipart/form-data" >
                
                 <h1 class="center-align" id="redac">Envoyer un fichier</h1>
@@ -40,21 +44,69 @@
                 
                 <div class="col s12 m4 l4" class="form-group">
                    
-                    <label for="name">fichier</label>
-                    <input type="hidden" name="MAX_FILE_SIZE" value="3000000000000000" />
-                    <input type="file" name="monFichier" id="monFichier" />
-                    <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
+                    <div class="file-field input-field" style="margin-top: 0">
+                              
+                        <div class="btn">
+                               
+                               <span>Fichier</span>
+                               
+                                <input type="file" name="monFichier" id="monFichier" />
+                         </div>
+                                
+                         <div class="file-path-wrapper">
+                               
+                                
+                            <input type="hidden" name="MAX_FILE_SIZE" value="3000000000000000" />
+                                
+                                
+                            <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
+                            
+                        </div>
+                        
+                   </div>
+                    
+                </div>
+                
+                <div class="col s12 m4 l4">
+                    
+                    <div class="row">
+                        
+                        <div class="input-field col s12">
+                            
+                            <textarea style="border-bottom: 0" id="article" name="article" class="materialize-textarea"></textarea>
+                            
+                            <label for="article">Message(facultatif)</label>
+                            
+                        </div>
+                        
+                    </div>
                     
                 </div>
                 
                 <div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
-                    <input id="button" name="submit" type="submit" value="Envoyer"/>
+                
+                <div class="col s12 m4 l4">
+                   
+                    <button class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
+
+                        <i class="material-icons right">send</i>
+
+                    </button>
+                    
+                </div>
+                
+            
 
             </form>
-        <span id="message"></span>
-        <span id="msg_all"></span>
+            
+            <span id="message"></span>
+            <span id="msg_all"></span>
         </div>
-	</div>
+        
+	   </div>
+	
+    </div>
+    
 </body>
 
 
