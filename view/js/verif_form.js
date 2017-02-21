@@ -41,10 +41,13 @@
 						            }
 
 									if (erreurenvoi == false) {
+                                        var urlDonnee = $(this).attr("action");
+                                        var donnee = $(this).serialize() ;
+                                        console.log($urlDonnee);
 						                $.ajax({
 						                    type : "POST",
-						                    url: $(this).attr("action"),
-						                    data: $(this).serialize(),
+						                    url: $urlDonnee ,
+						                    data: $donnee ,
 						                    success : function() {
 						                        $("#formulaire").html("<p id='publication'>L'article a bien été publié !</p><br><a class='accueil' href='#' id='accueil'>Retourner à l'accueil</a>");
 
