@@ -61,6 +61,11 @@ div#textnode {
 {
     font-family: "Roboto Mono", monospace;
 }
+
+
+                                /*                    TOPBAR*/
+
+
 .navbar-fixed
 {
     height: 100px;
@@ -89,6 +94,26 @@ a.brand-logo.center
 main
 {
     margin-top: 8em;
+}
+
+
+
+                                                        /*SIDEBAR*/
+
+
+#slide-out > li > i
+{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 37px;
+}
+
+#slide-out > li > a
+{    
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    margin-top: -9px;
 }
 
 .editext
