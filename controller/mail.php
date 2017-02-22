@@ -1,5 +1,5 @@
-<?php
-
+<?php 
+var_dump('pouet');
 if(isset($_POST['submit'])){
     $to = $_POST['maildest'];
     $from = $_POST['mail'];
@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     $headers .= "Content-Type: text/html; charset=\"utf-8\"";
     $headers2 = "From:" . $site;    
     mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers); 
+    mail($from,$subject2,$message2,$headers2); 
   
     }
 ?>
