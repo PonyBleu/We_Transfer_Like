@@ -3,8 +3,6 @@
     <div class="container">
       
        <div class="row">
-       
-        <div class="editext">
            
             <form method="post"name="formulaire" id="formulaire" action="controller/upload.php" enctype="multipart/form-data" >
                
@@ -38,7 +36,7 @@
                 
                 <div class="col s12 m4 l4" id="maildestalerte">Veuillez entrer l'Email du destinataire !>
                    
-                    <textarea id="article" name="article" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
+                    <textarea id="article" name="message" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
                     
                 </div>
                 
@@ -87,7 +85,7 @@
                 
                 <div class="col s12 m4 l4">
                    
-                    <button class="btn waves-effect waves-light" name="submit" style="height: 3rem" type="submit">Envoyer
+                    <button style="margin-top: 0.9em; height: 3rem" class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                         <i class="material-icons right">send</i>
 
@@ -105,7 +103,6 @@
         
 	   </div>
 	
-    </div>
     
 </body>
 
