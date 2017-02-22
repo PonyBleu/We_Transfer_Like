@@ -145,24 +145,17 @@ main
 /*  color: #fff;*/
   color: red;
 
-  width: 10%;
+  width: 13%;
   height: 58px;
 
-  margin-left: 12%;
+  margin-left: 11%;
   margin-top: -3em;
 
   position: absolute;
   display: none;
 }
 
-#imgmailalerte
-{
-  margin-left: -10%;
-  margin-top: 7%;
 
-  position: absolute;
-  display: none;
-}
 
 #mailalerte
 {
@@ -170,10 +163,10 @@ main
 /*  color: #fff;*/
   color: red;
 
-  width: 10%;
+  width: 13%;
   height: 58px;
 
-  margin-left: 12%;
+  margin-left: 11%;
   margin-top: -3em;
 
   position: absolute;
@@ -188,10 +181,10 @@ main
 /*  color: #fff;*/
     color: red;
 
-  width: 15%;
+  width: 17%;
   height: 56px;
 
-  margin-left: 8%;
+  margin-left: 6%;
   margin-top: -3em;
 
   position: absolute;
