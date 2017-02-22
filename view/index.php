@@ -54,8 +54,10 @@
                          </div>
 
                          <div class="file-path-wrapper">
-
-
+                               
+                            
+                            <input class="file-path validate" type="text">
+                            
                             <input type="hidden" name="MAX_FILE_SIZE" value="3000000000000000" />
 
 
@@ -86,8 +88,8 @@
                 <div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
 
                 <div class="col s12 m4 l4">
-
-                    <button class="btn waves-effect waves-light" name="submit" style="height: 3rem" type="submit">Envoyer
+                   
+                    <button style="margin-top: 0.9em; height: 3rem" class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                         <i class="material-icons right">send</i>
 
