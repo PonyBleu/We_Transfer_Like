@@ -20,7 +20,7 @@
 		<textarea id="article" name="article" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
         <label for="name">fichier</label>
         <input type="hidden" name="MAX_FILE_SIZE" value="3000000000000000" />
-        <input type="file" name="monFichier[]" id="monFichier" data-multiple-caption="{count} files selected" multiple/>
+        <input type="file" name="monFichier" id="monFichier"/>
         <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
 		<div id="fichieralerte"><img src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
 			<input id="button" name="submit" type="submit" value="Envoyer"/>
