@@ -61,7 +61,10 @@ div#textnode {
     font-family: "Roboto Mono", monospace;
 }
 
-
+body
+{
+    height: 40em;
+}
                                 /*                    TOPBAR*/
 
 
