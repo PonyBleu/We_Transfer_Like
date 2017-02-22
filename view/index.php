@@ -3,8 +3,6 @@
     <div class="container">
       
        <div class="row">
-       
-        <div class="editext">
            
             <form method="post"name="formulaire" id="formulaire" action="controller/upload.php" enctype="multipart/form-data" >
                
@@ -49,13 +47,15 @@
                         <div class="btn">
                                
                                <span>Fichier</span>
-                               
-                                <input type="file" name="monFichier" id="monFichier" />
+                        
+                                <input type="file"/>
                          </div>
                                 
                          <div class="file-path-wrapper">
                                
-                                
+                            
+                            <input class="file-path validate" type="text">
+                            
                             <input type="hidden" name="MAX_FILE_SIZE" value="3000000000000000" />
                                 
                                 
@@ -64,6 +64,7 @@
                         </div>
                         
                    </div>
+                   
                     
                 </div>
                 
@@ -87,11 +88,13 @@
                 
                 <div class="col s12 m4 l4">
                    
-                    <button class="btn waves-effect waves-light" name="submit" style="height: 3rem" type="submit">Envoyer
+                    <button style="margin-top: 0.9em; height: 3rem" class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                         <i class="material-icons right">send</i>
 
                     </button>
+                    
+                    
                     
                 </div>
                 
@@ -105,7 +108,6 @@
         
 	   </div>
 	
-    </div>
     
 </body>
 
