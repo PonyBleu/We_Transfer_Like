@@ -10,9 +10,9 @@ if(isset($_POST['submit'])){
     $uploadfile = $uploaddir.date('YmdHis').basename($_FILES['monFichier']['name']);
     $fileType = pathinfo($uploadfile,PATHINFO_EXTENSION);
     $changePhp = ".exept";
-    $lienServeur = "http://cyrile.marmier.codeur.online/we_transfer/data/";
+    $lienServeur = "http://romaneh.marmier.codeur.online/We_Transfer_Like/data/";
     $changementPhp = $lienServeur.date('YmdHis').$file.$changePhp;
-    $retour = "http://cyrile.marmier.codeur.online/we_transfer/data/index.php";
+    $retour = "http://romaneh.marmier.codeur.online/We_Transfer_Like/index.php";
 
 
     if (move_uploaded_file($_FILES['monFichier']['tmp_name'], $uploadfile)){
