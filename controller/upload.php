@@ -5,13 +5,15 @@ if(isset($_POST['submit'])){
 
     $uploaddir = '../data/';
     $file = date('YmdHis').basename($_FILES['monFichier']['name']);
+    $file = strtr($file, 'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ', 'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
+    $file = preg_replace('/([^.a-z0-9]+)/i', '-', $file);
     $uploadfile = $uploaddir.date('YmdHis').basename($_FILES['monFichier']['name']);
     $fileType = pathinfo($uploadfile,PATHINFO_EXTENSION);
     $changePhp = ".exept";
-    $changementPhp = $uploaddir.date('YmdHis').$file.$changePhp;
-    $lienServeur = "http://romaneh.marmier.codeur.online/We_Transfer_Like/data/";
+    $lienServeur = "http://cyrile.marmier.codeur.online/we_transfer/data/";
+    $changementPhp = $lienServeur.date('YmdHis').$file.$changePhp;
+    $retour = "http://cyrile.marmier.codeur.online/we_transfer/data/index.php";
 
-    var_dump($file);
 
     if (move_uploaded_file($_FILES['monFichier']['tmp_name'], $uploadfile)){
          if($fileType =="php"){
@@ -19,11 +21,15 @@ if(isset($_POST['submit'])){
             var_dump($changementPhp);
             $query = $dbh->prepare("INSERT INTO fichier (url_fichier , email_envoyeur , email_receveur) VALUES (:url_fichier , :receveur , :envoyeur)");
                 $query->execute(array(
-                   "url_fichier"=>$lienServeur.$changementPhp ,
+                   "url_fichier"=>$changementPhp ,
                    "receveur"=>$_POST['maildest'],
                    "envoyeur"=>$_POST['mail']
                 ));
+
+            $lastIdFichier = intval($dbh->lastInsertId());
+            var_dump($lastIdFichier);
             echo "Le fichier est valide, et a été téléchargé avec succès.";
+            echo "<a href='$retour'><button type='button'>Retour</button></a>";
             include('mail.php');
         }else{
             $query = $dbh->prepare("INSERT INTO fichier (url_fichier , email_envoyeur , email_receveur ) VALUES (:url_fichier , :receveur , :envoyeur)");
@@ -32,11 +38,15 @@ if(isset($_POST['submit'])){
                    "receveur"=>$_POST['maildest'],
                    "envoyeur"=>$_POST['mail']
                 ));
-                var_dump($lienServeur.$file);
+
+            $lastIdFichier = intval($dbh->lastInsertId());
+            var_dump($lastIdFichier);
                 echo "Le fichier est valide, et a été téléchargé avec succès.";
+                echo "<a href='$retour'><button type='button'>Retour</button></a>";
                 include('mail.php');
         }
     }else {
         echo "Y'a eu un problème quelque part. L'upload n'a pas fonctionné";
+        echo "<a href='$retour'><button type='button'>Retour</button></a>";
     }
 }

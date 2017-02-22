@@ -4,22 +4,13 @@ class Fichier
 {
 
     public function setform(){
-     global $dbh;
-     $get_id_fichier = $_GET['id_fichier'];
-     $req = $dbh->prepare("SELECT url_fichier , id_fichier FROM fichier WHERE id_fichier = :id_fichier");
-     $req->execute(array(
-        "id_fichier"=>$get_id_fichier
-     ));
-     $result = $req->fetchAll(PDO::FETCH_ASSOC);
-      // print_r($result);
-      if ($get_id_fichier == "")
-      {
-        echo "Une erreur est survenu !";
-      }else
-        {
-          echo "<a href='#' download='".$result['url_fichier']."'>Cliquez ici pour télécharger le fichier</a>";
-        }
-
+         global $dbh;
+         $idFichier = $_GET['url_fichier'];
+         $query = $dbh->prepare("SELECT url_fichier FROM fichier WHERE id_fichier = :id_fichier");
+         $query->execute(array(
+            "id_fichier"=>$idFichier
+         ));
+         return $query->fetch();
    }
 
   }
