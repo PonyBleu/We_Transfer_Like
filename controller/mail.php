@@ -1,8 +1,8 @@
-<?php 
-var_dump('pouet');
+<?php
+
 if(isset($_POST['submit'])){
     $to = $_POST['maildest'];
-    $from = $_POST['mail']; 
+    $from = $_POST['mail'];
     $site = "Wetransfer Like <noreply@wetransferlike.com>";
     $subject = "$from vous a envoyé un fichier depuis Wetransfer Like !";
     $subject2 = "Copie de votre envoi depuis Wetransfer Like";
