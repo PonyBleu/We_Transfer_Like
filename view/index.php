@@ -91,13 +91,11 @@
 
                         <div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
 
-                        <div class="col s12 m4 l4 offset-m4 offset-l4">
+                        <button style="margin-top: 0.9em; height: 3rem" class="col s12 m4 l4 offset-m4 offset-l4 btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
-                            <button style="margin-top: 0.9em; height: 3rem" class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
+                            <i class="material-icons right">send</i>
 
-                                <i class="material-icons right">send</i>
-
-                            </button>
+                        </button>
 
 
 
