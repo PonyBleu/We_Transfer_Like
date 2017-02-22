@@ -7,6 +7,7 @@ define('WEBROOT', str_replace($page, '', $_SERVER['SCRIPT_NAME']));
 require_once('model/PDO.php');
 
     $page = "view/index.php";
+    $fichier = new Fichier();
 
 
     if (isset($_GET['page'])) {
