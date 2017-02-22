@@ -1,16 +1,9 @@
-<body>
-   
-    <div class="container">
-      
-       <div class="row">
-           
-            <form method="post"name="formulaire" id="formulaire" action="controller/upload.php" enctype="multipart/form-data" >
+
               
               <div class="col s12 m5 l5 offset-m2 offset-l2">
                
                     <h1 class="center-align" id="redac">Envoyer un fichier</h1>
                     <hr>
-
                     <div class="col s12 m12 l12">
 
                         <input id="nom" name="nom" placeholder="Nom" value="<?php echo $_SESSION["$nom"];?>"><br>
@@ -48,11 +41,6 @@
 
                             </div>
 
-                        </div>
-
-                    </div>
-
-                    <div class="col s12 m4 l4" class="form-group">
 
                         <div class="file-field input-field">
 
@@ -94,34 +82,4 @@
 
 
                     </div>
-                
-                </div>
-                
-            
-
-            </form>
-            
-            <span id="message"></span>
-            <span id="msg_all"></span>
-        </div>
-        
-	   </div>
-	
-    
-</body>
-
-
-
-<!--<form action="controller/upload.php" method="post" enctype="multipart/form-data">
-    <div class="">
-        <div style="visibility:hidden; opacity:0" id="dropzone">
-            <div id="textnode">Drop ici</div>
-        </div>
-        <input type="hidden" name="MAX_FILE_SIZE" value="5000" />
-        <input type="file" name="monFichier" id="monFichier" class="inputfile" />
-        <label for="file"><strong>Choose a file</strong></label>
-        <p>ou drag and drop baby!</p>
-        <div id=text></div>
-    </div>
-    <button type="submit" name="submit" value="Upload Image">Envoyer !! </button>
-</form> -->
+                
