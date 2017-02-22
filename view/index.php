@@ -38,7 +38,7 @@
                 
                 <div class="col s12 m4 l4" id="maildestalerte">Veuillez entrer l'Email du destinataire !>
                    
-                    <textarea id="article" name="article" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
+                    <textarea id="article" name="message" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
                     
                 </div>
                 
