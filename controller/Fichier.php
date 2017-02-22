@@ -17,7 +17,7 @@ class Fichier
         echo "Une erreur est survenu !";
       }else
         {
-          echo "GG";
+          echo "<a href='#' download='".$result['url_fichier']."'>Cliquez ici pour télécharger le fichier</a>";
         }
 
    }
