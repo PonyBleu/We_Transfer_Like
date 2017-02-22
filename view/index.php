@@ -61,7 +61,7 @@
                         </div>
 
 
-                        <div class="col s12 m4 l4" class="form-group">
+                        <div class="col s12 m6 l6" class="form-group">
 
                             <div class="file-field input-field">
 
@@ -69,7 +69,7 @@
 
                                        <span>Fichier</span>
 
-                                        <input type="file"/>
+                                        <input name="monFichier" id="monFichier" type="file"/>
                                  </div>
 
                                  <div class="file-path-wrapper">
@@ -91,7 +91,7 @@
 
                         <div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
 
-                        <button style="margin-top: 0.9em; height: 3rem" class="col s12 m4 l4 offset-m4 offset-l4 btn waves-effect waves-light" name="submit" type="submit">Envoyer
+                        <button style="margin-top: 0.9em; height: 3rem" class="col s12 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                             <i class="material-icons right">send</i>
 
