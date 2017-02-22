@@ -44,7 +44,7 @@
                 
                 <div class="col s12 m4 l4" class="form-group">
                    
-                    <div class="file-field input-field" style="margin-top: 0">
+                    <div class="file-field input-field">
                               
                         <div class="btn">
                                
@@ -87,7 +87,7 @@
                 
                 <div class="col s12 m4 l4">
                    
-                    <button class="btn waves-effect waves-light" name="submit" type="submit">Envoyer
+                    <button class="btn waves-effect waves-light" name="submit" style="height: 3rem" type="submit">Envoyer
 
                         <i class="material-icons right">send</i>
 
