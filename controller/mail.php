@@ -6,11 +6,11 @@ if(isset($_POST['submit'])){
     $site = "Wetransfer Like <noreply@wetransferlike.com>";
     $subject = "$from vous a envoyé un fichier depuis Wetransfer Like !";
     $subject2 = "Copie de votre envoi depuis Wetransfer Like";
-    $message = $from . " " . " vous a transmis un fichier, pour le télécharger <a href='http://romaneh.marmier.codeur.online/We_Transfer_Like/view/download.php?id_fichier=1'>cliquez ici</a> " . "\n\n" . $_POST['message'];
+    $message = $from . " " . " vous a transmis un fichier, pour le télécharger <a href='http://romaneh.marmier.codeur.online/We_Transfer_Like/view/download.php?url_fichier='>cliquez ici</a> " . "\n\n" . $_POST['message'];
     $message2 = " Copie de votre message pour " . $to . "\n\n" . $_POST['message'];
-    $headers = "From:" . $site;
+    $headers = "From: \"Wetransfer Like\"<noreply@wetransferlike.com>\n";
+    $headers .= "Content-Type: text/html; charset=\"utf-8\"";
     $headers2 = "From:" . $site;    
-    $headers = "Content-type: text/html; charset=UTF-8";
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); 
   
