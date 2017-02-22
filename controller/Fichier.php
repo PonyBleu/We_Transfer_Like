@@ -1,6 +1,7 @@
 <?php
 
-class Fichier{
+class Fichier
+{
 
     public function setform(){
      global $dbh;
