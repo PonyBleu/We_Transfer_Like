@@ -1,13 +1,13 @@
 -<body>
-   
+
     <div class="container">
-      
+
        <div class="row">
-          
+
           <div class="col s12 m5 l5 offset-m2 offset-l2">
-          
-              <div class="row">
-           
+
+              <div class="row dropfile">
+
                     <form method="post"name="formulaire" id="formulaire" action="controller/upload.php" enctype="multipart/form-data" >
 
                         <h1 class="center-align" id="redac">Envoyer un fichier</h1>
@@ -43,7 +43,7 @@
                             <textarea id="article" name="message" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
 
                         </div>
-                        
+
                          <div class="col s12 m12 l12">
 
                             <div class="row">
@@ -71,7 +71,7 @@
 
                                         <input name="monFichier" id="monFichier" type="file"/>
                                  </div>
-
+<p id="fichierr"></p>
                                  <div class="file-path-wrapper">
 
 
@@ -98,32 +98,16 @@
                         </button>
 
                     </form>
-                
+
                 </div>
-            
+
             </div>
-            
+
             <span id="message"></span>
             <span id="msg_all"></span>
         </div>
-        
+
 	   </div>
-	
-    
+
+
 </body>
-
-
-
-<!--<form action="controller/upload.php" method="post" enctype="multipart/form-data">
-    <div class="">
-        <div style="visibility:hidden; opacity:0" id="dropzone">
-            <div id="textnode">Drop ici</div>
-        </div>
-        <input type="hidden" name="MAX_FILE_SIZE" value="5000" />
-        <input type="file" name="monFichier" id="monFichier" class="inputfile" />
-        <label for="file"><strong>Choose a file</strong></label>
-        <p>ou drag and drop baby!</p>
-        <div id=text></div>
-    </div>
-    <button type="submit" name="submit" value="Upload Image">Envoyer !! </button>
-</form> -->

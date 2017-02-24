@@ -1,89 +1,60 @@
-// $(document).ready(function() {
-//
-//     var lastTarget = null;
-//     function isFile(e) {
-//         var dt = e.dataTransfer;
-//
-//         for (var i = 0; i < dt.types.length; i++) {
-//             if (dt.types[i] === "Files") {
-//                 return true;
-//             }
-//         }
-//         return false;
-//     }
-//
-//
-//     function allowDrop(e) {
-//         e.preventDefault();
-//     }
-// 
-//     function drag(e) {
-//         e.dataTransfer.setData("text", e.target.id);
-//     }
-//
-//
-//
-//     window.addEventListener("dragenter", function (e) {
-//         if (isFile(e)) {
-//             lastTarget = e.target;
-//             $("#dropzone").css('visibility','visible');
-//             $("#dropzone").css('opacity','1')
-//         }
-//     });
-//     window.addEventListener("dragleave", function (e) {
-//          e.preventDefault();
-//          if (e.target === lastTarget) {
-//              $("#dropzone").css('visibility','hidden');
-//              $("#dropzone").css('opacity','0')
-//          }
-//      });
-//
-//      window.addEventListener("dragover", function (e) {
-//          e.preventDefault();
-//      });
-//
-//     window.addEventListener("drop", function(e) {
-//
-//         e.preventDefault();
-//         $("#dropzone").css('visibility','hidden');
-//         $("#dropzone").css('opacity','0');
-//         var files =e.dataTransfer.files;
-//         $.ajax({
-//             type : "POST",
-//             url: 'upload.php' ,
-//             data: $files ,
-//             success: function(){
-//                 console.log("pouet");
-//             },
-//             error: function(){
-//                 console.log("raté !");
-//             }
-//         });
-//     }, false);
-//
-// })
+function allowDrop(e) {
+   e.preventDefault();
+}
+function drop(e) {
+   e.preventDefault();
+}
+
+(function($){
 
 
-    // var i = 0 ;
-    //     while (i < e.dataTransfer.files.length) {
-    //          $("#text").append("<b>File selected:</b><br>" + e.dataTransfer.files[i].name);
-    //          console.log(e.dataTransfer.files[i]);
-    //          i++;
-    //     }
+    var o = {
+        message : 'Déposez vos fichiers ici',
+        script : 'controller/uploadDrop.php'
+    };
 
 
-        // var donnee = $("#formulaire").serialize() ;
+    $.fn.dropfile = function(oo){
+        console.log("tada");
+        if(oo) $.extend(o,oo);
+        this.each(function(){
+            $('<span>').append(o.message).appendTo(this);
+            $(this).bind({
+                dragenter : function(e){
+                    e.preventDefault();
+                    $(this).addClass('hover');
+                },
+                dragover : function(e){
+                    e.preventDefault();
+                    $(this).addClass('hover');
+                },
+                dragleave : function(e){
+                    e.preventDefault();
+                    $(this).removeClass('hover');
+                },
+            });
+            this.addEventListener('drop' ,function(e){
+                e.preventDefault();
+                var files = e.dataTransfer.files;
+                upload(files,$(this) ,0);
+                $(this).removeClass('hover');
+                console.log(files[0].name);
+                $("#fichierr").html(files[0].name);
+            }, false);
+        });
+
+        function upload(files , area , index){
+            var file = files[index];
+            var xhr = new XMLHttpRequest();
+            xhr.open('post',o.script,true);
+            xhr.setRequestHeader('content-type', 'multipart/form-data');
+            xhr.setRequestHeader('x-file-type', file.type );
+            xhr.setRequestHeader('x-file-size', file.size );
+            xhr.setRequestHeader('x-file-name', file.name );
+            xhr.send(file);
+        }
+
+    };
 
 
-
-    // $.ajax({
-    //    url: $("#formulaire").attr('action'),
-    //    type: $("#formulaire").attr('method'),
-    //    data: donnee,
-    //    success: function(data) {
-    //      console.log("pouet");
-    //    },
-    //    error: function() {
-    //      console.log("Noob !");
-    //    }
-   // });
+})(jQuery);
