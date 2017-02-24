@@ -19,7 +19,7 @@
 
                         </div>
 
-                        <div id="nomalerte">Veuillez entrer votre Nom !</div>
+                        <!--<div id="nomalerte">Veuillez entrer votre Nom !</div> -->
 
                         <div class="col s12 m12 l12">
 
@@ -27,7 +27,7 @@
 
                         </div>
 
-                        <div id="mailalerte">Veuillez entrer votre Email !</div>
+                        <!--<div id="mailalerte">Veuillez entrer votre Email !</div> -->
 
                         <div class="col s12 m12 l12">
 
@@ -35,11 +35,6 @@
 
                         </div>
 
-                        <div class="col s12 m12 l12" id="maildestalerte">Veuillez entrer l'Email du destinataire !>
-
-                            <textarea id="article" name="message" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
-
-                        </div>
                         
                          <div class="col s12 m12 l12">
 
@@ -83,7 +78,7 @@
 
                         </div>
 
-                        <button style="margin-top: 0.9em; height: 3rem" class="col s12 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
+                        <button style="margin-top: 0.9em; height: 3rem" class="col s4 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                             <i class="material-icons right">send</i>
 
@@ -99,7 +94,7 @@
         
 	   </div>
 	   
-	   <div>
+	   <div class="card" id="divError">
 	   
              <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
@@ -109,12 +104,13 @@
 
             <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
 
-             <div id="fichieralerte">Veuillez selectionner un fichier !</div>
+             <!--<div id="fichieralerte">Veuillez selectionner un fichier !</div> -->
 
             <span id="message"></span>
             <span id="msg_all"></span>
         
         </div>
+       
 	
     
 </body>

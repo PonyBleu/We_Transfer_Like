@@ -144,10 +144,17 @@ h1 #redac
   margin-left: 25%;
 }
 
-#nomalerte
+#divError
 {
-/*  background-color: #757575;*/
-/*  color: #fff;*/
+    background-color: white;
+    width: 20%;
+}
+
+
+/*#nomalerte
+{
+ background-color: #757575;
+  color: #fff;
   color: red;
 
   width: 13%;
@@ -164,8 +171,8 @@ h1 #redac
 
 #mailalerte
 {
-/*  background-color: #757575 ;*/
-/*  color: #fff;*/
+  background-color: #757575;
+  color: #fff;
   color: red;
 
   width: 13%;
@@ -182,8 +189,8 @@ h1 #redac
 
 #maildestalerte
 {
-/*  background-color: #757575 ;*/
-/*  color: #fff;*/
+  background-color: #757575 ;
+  color: #fff;
     color: red;
 
   width: 17%;
@@ -200,10 +207,10 @@ h1 #redac
 
 #fichieralerte
 {
-/*
+
   background-color: #757575 ;
   color: #fff;
-*/
+
   color: red;
 
   width: 15%;
@@ -214,7 +221,7 @@ h1 #redac
 
   position: absolute;
   display: none;
-}
+} */
 
 
 
