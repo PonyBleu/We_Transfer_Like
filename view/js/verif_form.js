@@ -12,6 +12,9 @@
 									var mailalerte  = "<div id='mailalerte' style='display:block'><img style='display:none' id='imgmailalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer votre email !</div>";
 									var maildestalerte  = "<div id='maildestalerte' style='display:block'><img style='display:none' id='imgmaildestalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer l'email du destinataire !</div>";
 									var fichieralerte  = "<div id='fichieralerte' style='display:block'><img style='display:none' id='imgfichieralerte' src='view/img/fleche2.png' alt='fleche'>Veuillez selectionner votre fichier !</div>";
+                                    document.getElementById("divError").style.display = "block";
+                                    
+                                  
 									var erreurenvoi = false;
 
 									$("#nomerr").html("");
