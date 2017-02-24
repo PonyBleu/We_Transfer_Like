@@ -146,6 +146,9 @@ h1 #redac
 
 #divError
 {
+    position: absolute;
+    top: 21em;
+    right: 12em;
     background-color: white;
     width: 20%;
 }

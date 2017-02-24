@@ -19,7 +19,6 @@
 
                         </div>
 
-                        <!--<div id="nomalerte">Veuillez entrer votre Nom !</div> -->
 
                         <div class="col s12 m12 l12">
 
@@ -27,7 +26,6 @@
 
                         </div>
 
-                        <!--<div id="mailalerte">Veuillez entrer votre Email !</div> -->
 
                         <div class="col s12 m12 l12">
 
@@ -96,7 +94,7 @@
 	   
 	   <div class="card" id="divError">
 	   
-             <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
+            <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
             <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
 
