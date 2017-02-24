@@ -16,7 +16,6 @@
                         <div class="col s12 m12 l12">
 
                             <input id="nom" name="nom" placeholder="Nom" value="<?php echo $_SESSION["$nom"];?>"><br>
-                            <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
                         </div>
 
@@ -25,7 +24,6 @@
                         <div class="col s12 m12 l12">
 
                             <input id="mail" name="mail" placeholder="Email" value="<?php echo $_SESSION["$mail"];?>"><br>
-                            <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
 
                         </div>
 
@@ -34,7 +32,6 @@
                         <div class="col s12 m12 l12">
 
                             <input id="maildest" name="maildest" placeholder="Email destinataire" value="<?php echo $_SESSION["maildest"];?>"><br>
-                            <span id="maildesterr" class="error"><?php echo $_SESSION["$maildesterr"];?></span>
 
                         </div>
 
@@ -79,17 +76,12 @@
 
                                     <input type="hidden" name="MAX_FILE_SIZE" value="3000000000000000" />
 
-
-                                    <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
-
                                 </div>
 
                            </div>
 
 
                         </div>
-
-                        <div id="fichieralerte"><img id='imgfichieralerte' src="view/img/fleche2.png" alt="fleche">Veuillez selectionner un fichier !</div>
 
                         <button style="margin-top: 0.9em; height: 3rem" class="col s12 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
@@ -103,11 +95,26 @@
             
             </div>
             
-            <span id="message"></span>
-            <span id="msg_all"></span>
-        </div>
+          </div>
         
 	   </div>
+	   
+	   <div>
+	   
+             <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
+
+            <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
+
+            <span id="maildesterr" class="error"><?php echo $_SESSION["$maildesterr"];?></span>
+
+            <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
+
+             <div id="fichieralerte">Veuillez selectionner un fichier !</div>
+
+            <span id="message"></span>
+            <span id="msg_all"></span>
+        
+        </div>
 	
     
 </body>
