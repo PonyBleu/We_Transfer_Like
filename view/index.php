@@ -1,13 +1,13 @@
 -<body>
-   
+
     <div class="container">
-      
+
        <div class="row">
-          
+
           <div class="col s12 m5 l5 offset-m2 offset-l2">
-          
-              <div class="row">
-           
+
+              <div class="row dropfile">
+
                     <form method="post"name="formulaire" id="formulaire" action="controller/upload.php" enctype="multipart/form-data" >
 
                         <h1 class="center-align" id="redac">Envoyer un fichier</h1>
@@ -19,7 +19,6 @@
 
                         </div>
 
-                        <div id="nomalerte">Veuillez entrer votre Nom !</div>
 
                         <div class="col s12 m12 l12">
 
@@ -27,7 +26,6 @@
 
                         </div>
 
-                        <div id="mailalerte">Veuillez entrer votre Email !</div>
 
                         <div class="col s12 m12 l12">
 
@@ -35,11 +33,6 @@
 
                         </div>
 
-                        <div class="col s12 m12 l12" id="maildestalerte">Veuillez entrer l'Email du destinataire !>
-
-                            <textarea id="article" name="message" rows="15" cols="100" placeholder="Message (facultatif)"></textarea><br>
-
-                        </div>
                         
                          <div class="col s12 m12 l12">
 
@@ -68,7 +61,7 @@
 
                                         <input name="monFichier" id="monFichier" type="file"/>
                                  </div>
-
+<p id="fichierr"></p>
                                  <div class="file-path-wrapper">
 
 
@@ -83,25 +76,25 @@
 
                         </div>
 
-                        <button style="margin-top: 0.9em; height: 3rem" class="col s12 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
+                        <button style="margin-top: 0.9em; height: 3rem" class="col s4 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                             <i class="material-icons right">send</i>
 
                         </button>
 
                     </form>
-                
+
                 </div>
-            
+
             </div>
             
           </div>
         
 	   </div>
 	   
-	   <div>
+	   <div class="card" id="divError">
 	   
-             <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
+            <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
             <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
 
@@ -109,28 +102,14 @@
 
             <span id="fichiererr" class="error"><?php echo $_SESSION["errfichier"];?></span>
 
-             <div id="fichieralerte">Veuillez selectionner un fichier !</div>
+             <!--<div id="fichieralerte">Veuillez selectionner un fichier !</div> -->
 
             <span id="message"></span>
             <span id="msg_all"></span>
         
         </div>
-	
-    
+
+	   </div>
+
+
 </body>
-
-
-
-<!--<form action="controller/upload.php" method="post" enctype="multipart/form-data">
-    <div class="">
-        <div style="visibility:hidden; opacity:0" id="dropzone">
-            <div id="textnode">Drop ici</div>
-        </div>
-        <input type="hidden" name="MAX_FILE_SIZE" value="5000" />
-        <input type="file" name="monFichier" id="monFichier" class="inputfile" />
-        <label for="file"><strong>Choose a file</strong></label>
-        <p>ou drag and drop baby!</p>
-        <div id=text></div>
-    </div>
-    <button type="submit" name="submit" value="Upload Image">Envoyer !! </button>
-</form> -->

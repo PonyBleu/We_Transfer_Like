@@ -31,10 +31,6 @@ session_start();
 
 <body >
 
-    <div id="dropzone">
-        <p><i class="fa fa-plus" aria-hidden="true"></i></p>
-        <p>      Vous pouvez déposer vos fichiers ici </p>
-    </div>
 
     <header>
 
@@ -97,6 +93,12 @@ session_start();
     <script>$(".button-collapse").sideNav();</script>
     <script type="text/javascript" src="view/js/animation.js"></script>
     <script type="text/javascript" src="view/js/js.js"></script>
+    <script type="text/javascript">
+        jQuery(function($){
+            $('.dropfile').dropfile({
+            });
+        });
+    </script>
 
 
 
