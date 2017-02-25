@@ -13,8 +13,12 @@ $(document).ready(function()
     
     $("body").css({"background-image" :bgImg, "background-size": "cover"});
     
-    $("button").click(function animateFinger () 
+    $("button").click(function () 
     {
+        animateFinger();
+        
+        function animateFinger()
+        {
         
         $("#finger").animate({
             opacity: 0.25,
@@ -33,7 +37,16 @@ $(document).ready(function()
             
             duration: 750 
             
-            });
+            }), 100, $("#finger").animate({
+            
+            opacity: 1
+            
+        }, 0, function(){
+            
+            animateFinger();
+        });
+            
+        }
     });
                             
     

@@ -100,10 +100,12 @@ h1#redac
 
 @keyframes slidein 
 {
-    0% {color: #2962ff;}
-    30% {color: #d50000;}
-    70% {color: #d50000;}
-    100% {color: #2962ff;}
+    0% {color: #d50000;}
+    30% {color: #2962ff;}   
+    60% {color: #d50000;}
+    80% {color:#2962ff;}
+    90% {color: #d50000;}
+    100% {color: #d50000;}
 }
 
 #nomAlerte
