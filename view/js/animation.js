@@ -1,3 +1,4 @@
+
 $(document).ready(function() 
 {
     
@@ -12,12 +13,44 @@ $(document).ready(function()
     
     $("body").css({"background-image" :bgImg, "background-size": "cover"});
     
-
-    
-    if (randomImg == 1)
+    $("button").click(function animateFinger () 
+    {
+        
+        $("#finger").animate({
+            opacity: 0.25,
+            marginRight: "3em"
+        },  
+                             
         {
-            console.log("Hello World");
-        }
+            duration: 750
+            
+        }), 100,  $("#finger").animate({
+            
+            opacity: 1,
+            marginRight: "0em"
+        }, 
+            {
+            
+            duration: 750 
+            
+            });
+    });
+                            
+    
+    
+//    if($("#finger").css("display") == "block")
+//        {
+//            console.log("Helle World");
+//        }
+//    else{
+//        
+//    }
+//    $("#finger").animate
+//    ({
+//         opacity: 0.25,
+//        left: "+=50"
+//    });
+
     
     
     $(".button-collapse").click(function()

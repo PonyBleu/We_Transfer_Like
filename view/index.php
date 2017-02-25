@@ -94,6 +94,8 @@
 	   
 	   <div class="card" id="divError">
 	   
+	         <img id="finger" style="position: absolute; transform: rotate(90deg); right: 23em; width: 35%; display: none" src="view/img/Finger.png"/>
+	   
             <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
             <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
