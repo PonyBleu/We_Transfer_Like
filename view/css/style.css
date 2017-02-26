@@ -1,9 +1,6 @@
+body
 {
-    font-family: "Roboto Mono", monospace;
-}
-
-body{
-    height: 40em;
+    background-repeat: no-repeat;
 }
                                 /*                    TOPBAR*/
 
@@ -224,7 +221,7 @@ a#bloc
     display: none;
 }
 
-@media screen and (max-width: 640px) 
+@media screen and (max-width: 992px) 
 {
   a#bloc 
   {
@@ -232,25 +229,6 @@ a#bloc
   }
 }
 
-@media screen and (max-width: 1330px) 
-{
-  #divError 
-  {
-    right: 8em;
-    width: 28%;
-  }
-    
-@media screen and (max-width: 790px)
-{
-    #divError
-    {
-        margin-right: auto;
-        margin-left: auto;
-        top: 63em;
-        width: 53%;
-    }
-}
-    
 @media screen and (max-width: 1500px)
 {
     #finger
@@ -259,8 +237,18 @@ a#bloc
     }
     
 }
+
+@media screen and (max-width: 1330px) 
+{
+  #divError 
+  {
+    right: 2em;
+    width: 28%;
+  }
+}
     
-@media screen and (max-width: 641px)
+    
+@media screen and (max-width: 895px)
 {
     #divError
     {
