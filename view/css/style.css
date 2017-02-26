@@ -224,8 +224,48 @@ a#bloc
     display: none;
 }
 
-@media screen and (max-width: 640px) {
-  a#bloc {
+@media screen and (max-width: 640px) 
+{
+  a#bloc 
+  {
     display: block;
   }
 }
+
+@media screen and (max-width: 1330px) 
+{
+  #divError 
+  {
+    right: 8em;
+    width: 28%;
+  }
+    
+@media screen and (max-width: 790px)
+{
+    #divError
+    {
+        margin-right: auto;
+        margin-left: auto;
+        top: 63em;
+        width: 53%;
+    }
+}
+    
+@media screen and (max-width: 1500px)
+{
+    #finger
+    {
+        display: none!important;
+    }
+    
+}
+    
+@media screen and (max-width: 641px)
+{
+    #divError
+    {
+        width: 100%;
+        right: 0;
+        top: 59em;
+    }
+    }
