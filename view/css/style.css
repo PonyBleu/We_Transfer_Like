@@ -38,13 +38,13 @@ main
                                                         /*SIDEBAR*/
 
 
-#slide-out > li > i{
+#slide-out > li > i, #slide-out2 > li > i{
     display: inline-block;
     margin-top: 15px;
     margin-left: 37px;
 }
 
-#slide-out > li > a{
+#slide-out > li > a, #slide-out2 > li > a{
     position: relative;
     top: -20px;
     display: inline-block;
@@ -52,10 +52,13 @@ main
 }
 
 
+
+
 h1#redac
 {
     font-family: 'Roboto Mono', monospace;
 }
+
 /*.editext
 {
   width: 250px;
@@ -213,4 +216,16 @@ h1#redac
 
 .hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+a#bloc
+{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+  a#bloc {
+    display: block;
+  }
 }
