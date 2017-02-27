@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $fileType = pathinfo($uploadfile,PATHINFO_EXTENSION);
     $changePhp = ".exept";
     $lienServeur = "http://romaneh.marmier.codeur.online/We_Transfer_Like/data/";
-    $changementPhp = $lienServeur.date('YmdHis').$file.$changePhp;
+    $changementPhp = $uploaddir.date('YmdHis').$file.$changePhp;
     $retour = "http://romaneh.marmier.codeur.online/We_Transfer_Like/index.php";
 
 

@@ -48,8 +48,23 @@ main
     margin-top: -9px;
 }
 
-
-
+.dropfile{
+    position: relative;
+}
+.progress{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    background-color: blue;
+}
+.unlink button{
+    display: inline-block;
+}
+.unlink p{
+    display: inline-block;
+}
 
 h1#redac
 {
@@ -98,10 +113,10 @@ h1#redac
     animation-iteration-count: infinite;
 }
 
-@keyframes slidein 
+@keyframes slidein
 {
     0% {color: #d50000;}
-    30% {color: #2962ff;}   
+    30% {color: #2962ff;}
     60% {color: #d50000;}
     80% {color:#2962ff;}
     90% {color: #d50000;}
@@ -137,6 +152,7 @@ h1#redac
     margin-right: auto;
     margin-left: auto;
 }
+
 
 
 /*#nomalerte
@@ -221,9 +237,9 @@ a#bloc
     display: none;
 }
 
-@media screen and (max-width: 992px) 
+@media screen and (max-width: 992px)
 {
-  a#bloc 
+  a#bloc
   {
     display: block;
   }
@@ -235,19 +251,19 @@ a#bloc
     {
         display: none!important;
     }
-    
+
 }
 
-@media screen and (max-width: 1330px) 
+@media screen and (max-width: 1330px)
 {
-  #divError 
+  #divError
   {
     right: 2em;
     width: 28%;
   }
 }
-    
-    
+
+
 @media screen and (max-width: 895px)
 {
     #divError

@@ -1,18 +1,17 @@
  $(function(){
 
 						        $("#formulaire").submit(function(event){
-//console.log("pouet");
 						            var monnom        = $("#nom").val();
 						            var monmail      = $("#mail").val();
 						            var sonmail      = $("#maildest").val();
 						            var monfichier	 = $("#monFichier").val();
 						            var meschamps = monnom + monmail + sonmail + monfichier;
 
-                                    $("#finger").css("display", "block");
 						            var nomalerte  = "<div id='nomalerte' style='display:block'><img style='display:none' id='imgnomalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer votre Nom !</div>";
 									var mailalerte  = "<div id='mailalerte' style='display:block'><img style='display:none' id='imgmailalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer votre email !</div>";
 									var maildestalerte  = "<div id='maildestalerte' style='display:block'><img style='display:none' id='imgmaildestalerte' src='view/img/fleche1.png' alt='fleche'>Veuillez entrer l'email du destinataire !</div>";
 									var fichieralerte  = "<div id='fichieralerte' style='display:block'><img style='display:none' id='imgfichieralerte' src='view/img/fleche2.png' alt='fleche'>Veuillez selectionner votre fichier !</div>";
+                                    $("#finger").css("display", "block");
                                     $("#divError").css('display' , "block" );
 
 
