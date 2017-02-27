@@ -1,4 +1,8 @@
 <?php
+require_once('../model/PDO.php');
+require_once('Fichier.php');
+$fichier = new Fichier();
+
 header('content-type: application/json');
 
 $h = getallheaders();
@@ -13,17 +17,9 @@ if(!in_array($h['x-file-type'],$type)){
 }else{
     file_put_contents("../data/".$h['x-file-name'],$source);
     $o->name = $h['x-file-name'];
-    $o->content = '<p>Vous venez d\'inserer '.$h['x-file-name'].'</p>';
+    $o->content = '<div class="unlink">
+    <p>Vous venez d\'inserer '.$h['x-file-name'].'</p><button class="supression" onclick="supr()" alt="image en forme de croix">Suprimer</button>
+    </div>';
 }
 
 echo json_encode($o);
-
-
-
-
-
-
-// print_r($h);
-// echo('<br />');
-// print_r($source);
-// file_put_contents("../data/".$h['x-file-name'],$source);

@@ -13,4 +13,8 @@ class Fichier
          return $query->fetch();
    }
 
+   public function unsetFichier($nomFichier){
+       unlink($nomFichier);
+   }
+
   }
