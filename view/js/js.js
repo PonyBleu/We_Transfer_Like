@@ -40,7 +40,8 @@ function supr(){
                 var files = e.dataTransfer.files;
                 upload(files,$(this) ,0);
                 $(this).removeClass('hover');
-                $("#fichierr").append(files[0].name);
+                console.log(files[0].name);
+                $("#fichierr").html(files[0].name);
             }, false);
         });
 

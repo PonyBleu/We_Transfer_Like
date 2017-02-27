@@ -13,6 +13,7 @@
 									var fichieralerte  = "<div id='fichieralerte' style='display:block'><img style='display:none' id='imgfichieralerte' src='view/img/fleche2.png' alt='fleche'>Veuillez selectionner votre fichier !</div>";
                                     $("#finger").css("display", "block");
                                     $("#divError").css('display' , "block" );
+				    $("#finger").css("display", "block");
 
 
 									var erreurenvoi = false;
