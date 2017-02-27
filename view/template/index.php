@@ -120,8 +120,11 @@ session_start();
             });
         });
     </script>
-
-
+    <script type="text/javascript">
+        $( document ).ready(function(){
+              $('.loader').hide();/*je cache le loader après le chargement de la page*/
+           });
+    </script>
 
 
 
