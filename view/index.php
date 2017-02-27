@@ -33,7 +33,7 @@
 
                         </div>
 
-                        
+
                          <div class="col s12 m12 l12">
 
                             <div class="row">
@@ -87,13 +87,13 @@
                 </div>
 
             </div>
-            
+
           </div>
-        
+
 	   </div>
-	   
+
 	   <div class="card" id="divError">
-	   
+
             <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
             <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
@@ -106,7 +106,7 @@
 
             <span id="message"></span>
             <span id="msg_all"></span>
-        
+
         </div>
 
 	   </div>
