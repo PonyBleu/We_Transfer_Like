@@ -33,7 +33,7 @@
 
                         </div>
 
-                        
+
                          <div class="col s12 m12 l12">
 
                             <div class="row">
@@ -87,11 +87,11 @@
                 </div>
 
             </div>
-            
+
           </div>
-        
+
 	   </div>
-	   
+
 	   <div class="card" id="divError">
 	   
 	         <img id="finger" style="position: absolute; transform: rotate(90deg); right: 23em; width: 35%; display: none" src="view/img/Finger.png"/>
@@ -108,7 +108,7 @@
 
             <span id="message"></span>
             <span id="msg_all"></span>
-        
+
         </div>
 
 	   </div>
