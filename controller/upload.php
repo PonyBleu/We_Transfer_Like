@@ -1,7 +1,7 @@
 <?php
 
 require_once('../model/PDO.php');
-// if(isset($_POST['submit'])){
+if(isset($_POST['submit'])){
 
     $uploaddir = '../data/';
     $file = date('YmdHis').basename($_FILES['monFichier']['name']);
@@ -49,4 +49,4 @@ require_once('../model/PDO.php');
         echo "Y'a eu un problème quelque part. L'upload n'a pas fonctionné";
         echo "<a href='$retour'><button type='button'>Retour</button></a>";
     }
-// }
+}
