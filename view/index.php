@@ -4,7 +4,7 @@
 
        <div class="row">
 
-          <div class="col s12 m5 l5 offset-m2 offset-l2">
+          <div class="col s12 m7 l5 offset-m1 offset-l2">
 
               <div class="row dropfile">
 
@@ -61,7 +61,7 @@
 
                                         <input name="monFichier" id="monFichier" type="file"/>
                                  </div>
-<p id="fichierr"></p>
+<!--<p id="fichierr"></p> -->
                                  <div class="file-path-wrapper">
 
 
@@ -76,7 +76,7 @@
 
                         </div>
 
-                        <button style="margin-top: 0.9em; height: 3rem" class="col s4 m4 l4 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
+                        <button style="margin-top: 0.9em; height: 3rem" class="col s4 m4 l4 offset-s1 offset-m2 offset-l2 btn waves-effect waves-light" name="submit" type="submit">Envoyer
 
                             <i class="material-icons right">send</i>
 
@@ -93,7 +93,9 @@
 	   </div>
 
 	   <div class="card" id="divError">
-
+	   
+	         <img id="finger" style="position: absolute; transform: rotate(90deg); right: 23em; width: 35%; display: none" src="view/img/Finger.png"/>
+	   
             <span id="nomerr" class="error"><?php echo $_SESSION["errnom"];?></span>
 
             <span id="mailerr" class="error"><?php echo $_SESSION["errmail"];?></span>
