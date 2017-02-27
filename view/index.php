@@ -1,4 +1,6 @@
--<body>
+<body>
+
+<div class="loader"></div>
 
     <div class="container">
 
@@ -112,6 +114,6 @@
         </div>
 
 	   </div>
-
+    
 
 </body>

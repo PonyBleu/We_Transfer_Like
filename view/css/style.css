@@ -48,23 +48,8 @@ main
     margin-top: -9px;
 }
 
-.dropfile{
-    position: relative;
-}
-.progress{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 0;
-    background-color: blue;
-}
-.unlink button{
-    display: inline-block;
-}
-.unlink p{
-    display: inline-block;
-}
+
+
 
 h1#redac
 {
@@ -154,7 +139,6 @@ h1#redac
 }
 
 
-
 /*#nomalerte
 {
  background-color: #757575;
@@ -235,6 +219,16 @@ h1#redac
 a#bloc
 {
     display: none;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/ajax-loader.gif) center no-repeat #fff;
 }
 
 @media screen and (max-width: 992px)
