@@ -115,19 +115,10 @@ session_start();
     <script type="text/javascript" src="<?= WEBROOT ?>/view/js/animation.js"></script>
     <script type="text/javascript" src="<?= WEBROOT ?>/view/js/js.js"></script>
     <script type="text/javascript">
-        jQuery(function($){
-            $('.dropfile').dropfile({
-            });
-        });
-    </script>
-    <script type="text/javascript">
         $( document ).ready(function(){
               $('.loader').hide();/*je cache le loader après le chargement de la page*/
            });
     </script>
-
-
-
 </body>
 
 
