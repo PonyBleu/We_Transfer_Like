@@ -98,10 +98,10 @@ h1#redac
     animation-iteration-count: infinite;
 }
 
-@keyframes slidein 
+@keyframes slidein
 {
     0% {color: #d50000;}
-    30% {color: #2962ff;}   
+    30% {color: #2962ff;}
     60% {color: #d50000;}
     80% {color:#2962ff;}
     90% {color: #d50000;}
@@ -221,9 +221,19 @@ a#bloc
     display: none;
 }
 
-@media screen and (max-width: 992px) 
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/ajax-loader.gif) center no-repeat #fff;
+}
+
+@media screen and (max-width: 992px)
 {
-  a#bloc 
+  a#bloc
   {
     display: block;
   }
@@ -235,19 +245,19 @@ a#bloc
     {
         display: none!important;
     }
-    
+
 }
 
-@media screen and (max-width: 1330px) 
+@media screen and (max-width: 1330px)
 {
-  #divError 
+  #divError
   {
     right: 2em;
     width: 28%;
   }
 }
-    
-    
+
+
 @media screen and (max-width: 895px)
 {
     #divError
