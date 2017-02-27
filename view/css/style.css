@@ -1,9 +1,6 @@
+body
 {
-    font-family: "Roboto Mono", monospace;
-}
-
-body{
-    height: 40em;
+    background-repeat: no-repeat;
 }
                                 /*                    TOPBAR*/
 
@@ -38,13 +35,13 @@ main
                                                         /*SIDEBAR*/
 
 
-#slide-out > li > i{
+#slide-out > li > i, #slide-out2 > li > i{
     display: inline-block;
     margin-top: 15px;
     margin-left: 37px;
 }
 
-#slide-out > li > a{
+#slide-out > li > a, #slide-out2 > li > a{
     position: relative;
     top: -20px;
     display: inline-block;
@@ -52,10 +49,13 @@ main
 }
 
 
+
+
 h1#redac
 {
     font-family: 'Roboto Mono', monospace;
 }
+
 /*.editext
 {
   width: 250px;
@@ -100,10 +100,12 @@ h1#redac
 
 @keyframes slidein 
 {
-    0% {color: #2962ff;}
-    30% {color: #d50000;}
-    70% {color: #d50000;}
-    100% {color: #2962ff;}
+    0% {color: #d50000;}
+    30% {color: #2962ff;}   
+    60% {color: #d50000;}
+    80% {color:#2962ff;}
+    90% {color: #d50000;}
+    100% {color: #d50000;}
 }
 
 #nomAlerte
@@ -212,3 +214,46 @@ h1#redac
 .hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+a#bloc
+{
+    display: none;
+}
+
+@media screen and (max-width: 992px) 
+{
+  a#bloc 
+  {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1500px)
+{
+    #finger
+    {
+        display: none!important;
+    }
+    
+}
+
+@media screen and (max-width: 1330px) 
+{
+  #divError 
+  {
+    right: 2em;
+    width: 28%;
+  }
+}
+    
+    
+@media screen and (max-width: 895px)
+{
+    #divError
+    {
+        width: 100%;
+        right: 0;
+        top: 59em;
+    }
+    }
